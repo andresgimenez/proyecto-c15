@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Siemienczuk | Servicios</title>
-    <link rel="stylesheet" href="style/stylesheet.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Fuente de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png" alt="">
+    <header class="header header__fondo">
+        <img class= "header__logo--tamano" src="images/logo.png" alt="">
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -35,45 +35,45 @@
         </nav>
     </header>
     <main>
-        <section class="margen contenidoPrincipal">
+        <section class="margen home-contenido-principal home-contenido-principal--bcgcolor">
             <h2>Nuestros servicios</h2>
             <p><span class="negrita">Llave en mano.</span> Elegir este sistema de construcción posibilita contar con presupuesto y plazo de obra fijos con avances de
                 obra acorde a la necesidad de cada cliente, desligandolo de las complejas tareas que involucran una
                 construcción para su correcta ejecución, dejando la satisfaccion de visitar su obra, solamente para ver como
                 se mateializan sus sueños.</p>
         </section>
-        <div class="margen grillaServicios"> <!-- Se repite el mismo SVG hasta encontrar los íconos ideales -->
-            <section id="carpinteria">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+        <div class="margen grilla-servicios"> <!-- Se repite el mismo SVG hasta encontrar los íconos ideales -->
+            <section class="grilla-servicios__card" id="carpinteria">
+                <svg class="grilla-servicios__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
                     <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
                   </svg>
                 <h3>Carpintería</h3>
                 <p>Fabricamos todos los muebles sugeridos o diseñados.</p>
             </section>
-            <section id="albanileria">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+            <section class="grilla-servicios__card" id="albanileria">
+                <svg class="grilla-servicios__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
                     <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
                   </svg>
                 <h3>Albañilería</h3>
                 <p>Contamos con personal capacitado para todo tipo de obra.</p>
             </section>
-            <section id="electricidad">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+            <section class="grilla-servicios__card" id="electricidad">
+                <svg class="grilla-servicios__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
                     <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
                   </svg>
                 <h3>Electricidad</h3>
                 <p>Personal idóneo, para todo tipo de instalaciones eléctricas, y colocacion de luminarias tanto
                     exterior como interior.</p>
             </section>
-            <section id="durlock">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+            <section class="grilla-servicios__card" id="durlock">
+                <svg class="grilla-servicios__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
                     <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
                   </svg>
                 <h3>Durlock</h3>
                 <p>Armado y colocación de tabiquerías y cielorrasos.</p>
             </section>
-            <section id="herreria">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+            <section class="grilla-servicios__card" id="herreria">
+                <svg class="grilla-servicios__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
                     <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
                   </svg>
                 <h3>Herrería</h3>
@@ -81,23 +81,23 @@
                     materiales, cortes con pantografos, plegados y diversos tipos de terminaciones como cromados,
                     pinturas, o patinas.</p>
             </section>
-            <section id="pintura">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+            <section class="grilla-servicios__card" id="pintura">
+                <svg class="grilla-servicios__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
                     <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
                   </svg>
                 <h3>Pintura</h3>
                 <p>Interior y exterior, latex, patinas, espatulados, revoques plasticos, estucos, aplicaciones en
                     diversas tecnicas como pincel, soplete, espatulas, llanados.</p>
             </section>
-            <section id="plomeria">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+            <section class="grilla-servicios__card" id="plomeria">
+                <svg class="grilla-servicios__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
                     <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
                   </svg>
                 <h3>Plomería</h3>
                 <p>Instalaciones generales de gas y agua, sistemas de riegos automaticos, instalaciones industriales,
                     domiciliarias, hidromasajes, duchas escosesas, instalaciones gastronomicas.<</p>
             </section>
-            <section id="disenoAdministracion">
+            <section class="grilla-servicios__card" id="disenoAdministracion">
                 <div>
                     <h3>Diseño</h3>
                     <ul> <!--DISEÑO-->
@@ -125,9 +125,9 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="footer footer__fondo">
         <div>
-            <img src="images/logo_trescolores.jpg" alt="">
+            <img class="footer__logo--tamano" src="images/logo_trescolores.jpg" alt="">
             <h6><a href="index.html">INICIO</a> | <a href="proyectos.html">PROYECTOS</a> | <a
                     href="servicios.html">SERVICIOS</a> | <a href="estudio.html">ESTUDIO</a> | <a
                     href="contacto.html">CONTACTO</a></h6>

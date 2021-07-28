@@ -1,58 +1,18 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-}
-/* Fin Reset */
-
-/* Tipografía */
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.italica {
-    font-style: italic;
-}
-
-.negrita {
-    font-weight: 700;
-}
-
-h1 {
-    font-size: 70px;
-}
-
-h2 {
-    font-size: 40px;
-}
-
-h3 {
-    font-size: 30px;
-}
-
-p {
-    line-height: 1.9;
-}
-/* Fin tipografía */
-
-/* Estilos */
-.margen {
-    margin: 25px;
-}
-/* Fin Estilos */
-
 /* Header */
-header {
+.header {
     height: 15vh;
-    background-image: linear-gradient(#fc7404, #fc7404 10%, #c7c3bd, #c7c3bd, #c7c3bd, #c7c3bd);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    border-bottom: 1px solid #fc7404;
+    border-bottom: 1px solid $naranja;
 }
 
-header img {
+.header__fondo {
+    background-image: linear-gradient($naranja, $naranja 10%, $gris, $gris, $gris, $gris);
+}
+
+.header__logo--tamano {
     height: 70px;
 }
 
@@ -86,33 +46,34 @@ nav ul li:hover ul{
 }
 
 /* Fin Submenú */
-/* Fin header */
-
+/* Fin Header */
 /* Footer */
-footer {
+.footer {
     height: 15vh;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-image: linear-gradient(white, white, white, #fc7404 90%, #fc7404);
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-footer div {
+.footer__fondo {
+    background-image: linear-gradient(white, white, white, $naranja 90%, $naranja);
+}
+
+.footer__logo--tamano {
+    height: 50px;
+}
+
+.footer div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-
-footer img {
-    height: 50px;
-}
 /* Fin Footer */
-
-/* Fondo Principal Decorativo Index-Home */
-.fondoHome {
+/* Fondo Principal Home */
+.fondo-home {
     height: 85vh;
     background-image: url(../images/home.jpg);
     display: flex;
@@ -121,42 +82,38 @@ footer img {
     justify-content: center;
 }
 
-.tituloHome {
+.fondo-home__titulo {
     text-shadow: 1px 1px 2px white;
 }
-/* Fin Fondo Principal Decorativo Index-Home */
 
+.fondo-home__subtitulo {
+    text-shadow: 1px 1px 2px white;
+}
+/* Fin Fondo Principal Home */
 /* Contenido Principal Home */
-.contenidoPrincipalHome {
+.home-contenido-principal {
     padding: 10px;
     border-radius: 5px;
-    background-color: #c7c3bd;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.contenidoPrincipalHome div {
+.home-contenido-principal--bcgcolor {
+    background-color: $gris;
+}
+
+.home-contenido-principal--flxbasis {
     flex-basis: 50%;
 }
 
-.contenidoPrincipalHome img {
+.home-contenido-principal__imagen--borde {
     border-radius: 5px;
 }
 /* Fin Contenido Principal Home */
-
-/* Contenido Principal */
-.contenidoPrincipal {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #c7c3bd;
-    display: block;
-}
-/* Fin Contenido Principal */
-
 /* Grid Sección Proyectos */
-.grillaProyectos {
+.grilla-proyectos {
     display: grid;
     grid-template-areas: 
     "viviendasUnifamiliares viviendasColectivas"
@@ -169,16 +126,19 @@ footer img {
     margin-bottom: 25px;
 }
 
-.grillaProyectos section {
+.grilla-proyectos__section {
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 15px;
+}
+
+.grilla-proyectos__section--fondo {
     background-repeat: round;
 }
 
-.grillaProyectos section h3 a {
+.grilla-proyectos__titulo {
     font-size: 40px;
     color: black;
     text-shadow: 1px 1px 2px white;
@@ -211,9 +171,8 @@ footer img {
     background-image: url(../images/viviendaunifamiliar1.jpg);
 }
 /* Fin Grid Sección Proyectos */
-
 /* Grid Sección Servicios */
-.grillaServicios {
+.grilla-servicios {
     display: grid;
     grid-template-areas: 
     "carpinteria albanileria electricidad"
@@ -227,18 +186,22 @@ footer img {
     grid-row-gap: 15px;
     padding: 15px 15px 15px 15px;
     border-radius: 5px;
-    background-color: #fc7404;
+    background-color: $naranja;
     justify-content: space-evenly;
 }
 
-.grillaServicios section{
+.grilla-servicios__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 15px;
-    background-color: #c7c3bd;
+    background-color: $gris;
     border-radius: 5px;
+}
+
+.grilla-servicios__icon {
+    height: 25px;
 }
 
 #carpinteria {
@@ -279,9 +242,8 @@ footer img {
     list-style-type: none;
 }
 /* Fin Grid Sección Servicios */
-
 /* Grid Sección Contacto */
-.grillaContacto {
+.grilla-contacto {
     display: grid;
     grid-template-areas: 
     "datos  formulario"
@@ -293,20 +255,23 @@ footer img {
     grid-row-gap: 15px;
     padding: 15px 15px 15px 15px;
     border-radius: 5px;
-    background-color: #fc7404;
+    background-color: $naranja;
     justify-content: space-evenly;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-.grillaContacto section {
+.grilla-contacto__section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 15px;
-    background-color: #c7c3bd;
     border-radius: 5px;
+}
+
+.grilla-contacto__section--fondo {
+    background-color: $gris;
 }
 
 #datos {
@@ -325,86 +290,41 @@ footer img {
     margin: 10px;
 }
 /* Fin Grid Sección Contacto */
-
-/* Media Querie Mobile */
-@media only screen and (max-width: 600px) {
-    
-    header img {
-        height: 50px;
-    }
-    
-    header {
-        display: flexbox;
-        height: 20vh;
-        padding: 5px;
-        border-bottom: solid black 1px;
-        background-color: skyblue;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    nav li {
-        font-size: large;
-        display: inline;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    nav ul li:hover ul{
-        display: none;
-    }
-
-    section iframe {
-        display: none;
-    }
-
-    /* Footer */
-    footer {
-        height: 25vh;
-        padding: 8px;
-        background-image: linear-gradient(white, white, white, #fc7404 90%, #fc7404);
-    }
-
-    footer div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-    }
-
-    footer img {
-        height: 60px;
-    }
-    /* Fin Footer */
-    /* Fondo Principal Decorativo Index-Home */
-    .fondoHome {
-        height: 80vh;
-        background-image: url(../images/home.jpg);
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .tituloHome {
-        text-shadow: 1px 1px 2px white;
-    }
-    /* Fin Fondo Principal Decorativo Index-Home */
-
-    /* Contenido Principal Home */
-    .contenidoPrincipalHome {
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #c7c3bd;
-        display: flex;
-        flex-flow: column wrap;
-        text-align: center;
-    }
-
-    .contenidoPrincipalHome img {
-        border-radius: 5px;
-    }
-    /* Fin Contenido Principal Home */
-
+/* Contenedor genérico para sub-secciones de Proyectos */
+.proyecto {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    border-radius: 5px;
 }
-/* Fin Media Querie Mobile */
+
+.proyecto--importante {
+    background-color: $gris;
+}
+
+.proyecto__titulo {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.proyecto__titulo--uppercase {
+    text-transform: uppercase;
+}
+
+.proyecto__subtitulo {
+    font-size: medium;
+    font-weight: 500;
+}
+/* Fin Contenedor genérico para sub-secciones de Proyectos */
+/* Contenedor para sección Estudio*/
+.contenido-principal-estudio {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contenido-principal-estudio--bcgcolor {
+    background-color: $gris;
+}
+/* Fin contenedor para sección Estudio */

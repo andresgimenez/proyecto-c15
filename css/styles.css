@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/* Reset */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* Tipografía */
+body {
+  font-family: "Roboto", sans-serif; }
+
+.italica {
+  font-style: italic; }
+
+.negrita {
+  font-weight: 700; }
+
+h1 {
+  font-size: 70px; }
+
+h2 {
+  font-size: 40px; }
+
+h3 {
+  font-size: 30px; }
+
+p {
+  line-height: 1.9; }
+
+/* Fin tipografía */
+/* Margenes */
+.margen {
+  margin: 25px; }
+
+/* Header */
+.header {
+  height: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #fc7404; }
+
+.header__fondo {
+  background-image: linear-gradient(#fc7404, #fc7404 10%, #c7c3bd, #c7c3bd, #c7c3bd, #c7c3bd); }
+
+.header__logo--tamano {
+  height: 70px; }
+
+nav ul li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  /* Para submenú */ }
+
+nav ul li a {
+  color: black;
+  text-decoration: none; }
+
+/* Submenú de Proyectos*/
+nav ul ul {
+  display: none;
+  position: absolute;
+  left: 0px; }
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: space-evenly;
+  background-color: #c7c3bd;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+/* Fin Submenú */
+/* Fin Header */
+/* Footer */
+.footer {
+  height: 15vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.footer__fondo {
+  background-image: linear-gradient(white, white, white, #fc7404 90%, #fc7404); }
+
+.footer__logo--tamano {
+  height: 50px; }
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+/* Fin Footer */
+/* Fondo Principal Home */
+.fondo-home {
+  height: 85vh;
+  background-image: url(../images/home.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.fondo-home__titulo {
+  text-shadow: 1px 1px 2px white; }
+
+.fondo-home__subtitulo {
+  text-shadow: 1px 1px 2px white; }
+
+/* Fin Fondo Principal Home */
+/* Contenido Principal Home */
+.home-contenido-principal {
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between; }
+
+.home-contenido-principal--bcgcolor {
+  background-color: #c7c3bd; }
+
+.home-contenido-principal--flxbasis {
+  flex-basis: 50%; }
+
+.home-contenido-principal__imagen--borde {
+  border-radius: 5px; }
+
+/* Fin Contenido Principal Home */
+/* Grid Sección Proyectos */
+.grilla-proyectos {
+  display: grid;
+  grid-template-areas: "viviendasUnifamiliares viviendasColectivas" "localesComerciales oficinas" "edificiosPublicos none";
+  grid-template-rows: 400px 400px 400px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.grilla-proyectos__section {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.grilla-proyectos__section--fondo {
+  background-repeat: round; }
+
+.grilla-proyectos__titulo {
+  font-size: 40px;
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  text-decoration: none; }
+
+#oficinas {
+  grid-area: oficinas;
+  background-image: url(../images/localescomerciales1.jpg); }
+
+#edificiosPublicos {
+  grid-area: edificiosPublicos;
+  background-image: url(../images/localescomerciales1.jpg); }
+
+#localesComerciales {
+  grid-area: localesComerciales;
+  background-image: url(../images/localescomerciales1.jpg); }
+
+#viviendasUnifamiliares {
+  grid-area: viviendasUnifamiliares;
+  background-image: url(../images/viviendaunifamiliar1.jpg); }
+
+#viviendasColectivas {
+  grid-area: viviendasColectivas;
+  background-image: url(../images/viviendaunifamiliar1.jpg); }
+
+/* Fin Grid Sección Proyectos */
+/* Grid Sección Servicios */
+.grilla-servicios {
+  display: grid;
+  grid-template-areas: "carpinteria albanileria electricidad" "durlock herreria pintura" ". plomeria none" "disenoAdministracion disenoAdministracion disenoAdministracion";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 5px;
+  background-color: #fc7404;
+  justify-content: space-evenly; }
+
+.grilla-servicios__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+  background-color: #c7c3bd;
+  border-radius: 5px; }
+
+.grilla-servicios__icon {
+  height: 25px; }
+
+#carpinteria {
+  grid-area: carpinteria; }
+
+#albanileria {
+  grid-area: albanileria; }
+
+#electricidad {
+  grid-area: electricidad; }
+
+#durlock {
+  grid-area: durlock; }
+
+#herreria {
+  grid-area: herreria; }
+
+#pintura {
+  grid-area: pintura; }
+
+#plomeria {
+  grid-area: plomeria; }
+
+#disenoAdministracion {
+  grid-area: disenoAdministracion;
+  display: flex;
+  flex-direction: row; }
+
+#disenoAdministracion div ul {
+  list-style-type: none; }
+
+/* Fin Grid Sección Servicios */
+/* Grid Sección Contacto */
+.grilla-contacto {
+  display: grid;
+  grid-template-areas: "datos  formulario" "mapa   mapa";
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 5px;
+  background-color: #fc7404;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.grilla-contacto__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 15px;
+  border-radius: 5px; }
+
+.grilla-contacto__section--fondo {
+  background-color: #c7c3bd; }
+
+#datos {
+  grid-area: datos; }
+
+#formulario {
+  grid-area: formulario; }
+
+#mapa {
+  grid-area: mapa; }
+
+#datos p {
+  margin: 10px; }
+
+/* Fin Grid Sección Contacto */
+/* Contenedor genérico para sub-secciones de Proyectos */
+.proyecto {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px;
+  border-radius: 5px; }
+
+.proyecto--importante {
+  background-color: #c7c3bd; }
+
+.proyecto__titulo {
+  font-size: 50px;
+  font-weight: 600; }
+
+.proyecto__titulo--uppercase {
+  text-transform: uppercase; }
+
+.proyecto__subtitulo {
+  font-size: medium;
+  font-weight: 500; }
+
+/* Fin Contenedor genérico para sub-secciones de Proyectos */
+/* Contenedor para sección Estudio*/
+.contenido-principal-estudio {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px;
+  border-radius: 5px; }
+
+.contenido-principal-estudio--bcgcolor {
+  background-color: #c7c3bd; }
+
+/* Fin contenedor para sección Estudio */
