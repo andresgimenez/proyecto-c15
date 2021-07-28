@@ -6,93 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Siemienczuk | Contacto</title>
-    <!-- Link con archivo CSS -->
     <link rel="stylesheet" href="style/stylesheet.css">
-    <!-- Importa fuente de Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Fuente de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <!--Logo va a ir acá, con el menú a pantalla completa-->
-        <img src="images/logo.png" alt="logo de Ivan Siemienczuk Arquitectura">
+        <img src="images/logo.png" alt="">
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="proyectos.html">Proyectos</a>
+                    <ul>  <!-- Submenú de Proyectos -->
+                        <li><a href="proyectos/edificiospublicos.html">Edificios públicos</a></li>
+                        <li><a href="proyectos/localescomerciales.html">Locales comerciales</a></li>
+                        <li><a href="proyectos/oficinas.html">Oficinas</a></li>
+                        <li><a href="proyectos/viviendascolectivas.html">Viviendas colectivas</a></li>
+                        <li><a href="proyectos/viviendasunifamiliares.html">Viviendas unifamiliares</a></li>
+                    </ul>
+                </li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="estudio.html">Estudio</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <main class="margen">
         <h2>Contacto</h2>
-        <div>
-            <h3>Dirección</h3>
-            <p>Avenida Eva Perón 8120 - Oficina 6</p>
-            <p>Rosario, Santa Fe</p>
-            <h3>Horarios de atención</h3>
-            <p>Lunes a viernes: 9:00 hs. a 17:00 hs.</p>
-            <p>Sábados: 10:00 hs. a 13:00 hs.</p>
-            <h3>Redes sociales</h3>
-            <a href="">Facebook</a>
-            <a href="">Instagram</a>
-            <h3>Canales de contacto</h3>
-            <p>Correo electrónico: <a href="mailto:">lorem@ipsum.com</a></p>
-            <p>Teléfono: <a href="tel:">0303456</a></p>
+        <div class="grillaContacto">
+            <section id="datos">
+                <h3>Dirección</h3>
+                <p>Avenida Eva Perón 8120 - Oficina 6<br>Rosario, Santa Fe</p>
+                <h3>Horarios de atención</h3>
+                <p>Lunes a viernes: 9:00 hs. a 17:00 hs.<br>Sábados: 10:00 hs. a 13:00 hs.</p>
+                <h3>Redes sociales</h3>
+                <p><a href="">Facebook</a> <a href="">Instagram</a></p>
+                <h3>Canales de contacto</h3>
+                <p>Correo electrónico: <a href="mailto:">lorem@ipsum.com</a><br>Teléfono: <a href="tel:">0303456</a></p>
+            </section>
+            <section id="formulario">
+                <h3>Escribinos</h3>
+                <form action="">
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido">
+                        <label for="mail">Correo electrónico</label>
+                        <input type="email" name="mail">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono">
+                        <h4>¿Dónde oyó hablar de nosotros?</h4>
+                        <h5>Puede seleccionar más de una opción.</h5>
+                        <input type="checkbox" name="rrss" value="1">Redes sociales
+                        <input type="checkbox" name="flia_amigos" value="1">Familiares / Amigos
+                        <input type="checkbox" name="publicidad" value="1">Publicidad
+                    </fieldset>
+                    <fieldset>
+                        <legend>Deje su consulta</legend>
+                        Motivo:
+                        <select>
+                            <option hidden selected>Elija una opción</option>
+                            <option value="cotizacion">Cotización</option>
+                            <option value="proyecto">Proyecto</option>
+                            <option value="obras">Obras en construcción</option>
+                            <option value="proveedores">Proveedores</option>
+                        </select><br>
+                        <textarea name="consulta" cols="30" rows="10"></textarea>
+                        <h4>¿Por dónde desea ser contactado?</h4>
+                        <p>Teléfono</p>
+                        <input type="radio" name="contacto" value="telefono">
+                        <p>Correo electrónico</p>
+                        <input type="radio" name="contacto" value="email"><br>
+                        <input type="reset" value="Limpiar formulario">
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </section>
+            <section id="mapa"> <!--Mapa de Google Maps con ubicación del estudio-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.2137559308152!2d-60.73787557078192!3d-
+                32.92842839880792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b652c26b1fb841%3A0xbbb8d7f855a9e793!2
+                sArquitecto%20Iv%C3%A1n%20Siemienczuk!5e0!3m2!1ses-419!2sar!4v1623266625397!5m2!1ses-419!2sar" width="100%"
+                    height="340" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
         </div>
-        <h3>Escribinos</h3>
-        <div>
-            <form action="">
-                <fieldset>
-                    <legend>Datos de contacto</legend>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido">
-                    <label for="mail">Correo electrónico</label>
-                    <input type="email" name="mail">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono">
-                    <h4>¿Dónde oyó hablar de nosotros?</h4>
-                    <h5>Puede seleccionar más de una opción.</h5>
-                    <input type="checkbox" name="rrss" value="1">Redes sociales
-                    <input type="checkbox" name="flia_amigos" value="1">Familiares / Amigos
-                    <input type="checkbox" name="publicidad" value="1">Publicidad
-                </fieldset>
-                <fieldset>
-                    <legend>Deje su consulta</legend>
-                    Motivo:
-                    <select>
-                        <option hidden selected>Elija una opción</option>
-                        <option value="cotizacion">Cotización</option>
-                        <option value="proyecto">Proyecto</option>
-                        <option value="obras">Obras en construcción</option>
-                        <option value="proveedores">Proveedores</option>
-                    </select><br>
-                    <textarea name="consulta" cols="30" rows="10"></textarea>
-                    <h4>¿Por dónde desea ser contactado?</h4>
-                    <p>Teléfono</p>
-                    <input type="radio" name="contacto" value="telefono">
-                    <p>Correo electrónico</p>
-                    <input type="radio" name="contacto" value="email"><br>
-                    <input type="reset" value="Limpiar formulario">
-                    <input type="submit" value="Enviar">
-                </fieldset>
-            </form>
-        </div>
-    </section>
+    </main>
     <footer>
-        <h6><a href="index.html">INICIO</a> | <a href="proyectos.html">PROYECTOS</a> | <a
-                href="servicios.html">SERVICIOS</a> | <a href="estudio.html">ESTUDIO</a> | <a
-                href="contacto.html">CONTACTO</a></h6>
-        <h6>IVAN SIEMIENCZUK ARQUITECTURA</h6>
-        <h6>
-            <!--Desarrollado por Ander-->
-        </h6>
-        <!--Iconos con enlaces a redes sociales-->
+        <div>
+            <img src="images/logo_trescolores.jpg" alt="">
+            <h6><a href="index.html">INICIO</a> | <a href="proyectos.html">PROYECTOS</a> | <a
+                    href="servicios.html">SERVICIOS</a> | <a href="estudio.html">ESTUDIO</a> | <a
+                    href="contacto.html">CONTACTO</a></h6>
+            <h6>IVAN SIEMIENCZUK ARQUITECTURA</h6>
+        </div>
     </footer>
 </body>
-
 </html>

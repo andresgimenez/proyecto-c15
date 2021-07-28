@@ -6,20 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Siemienczuk | Servicios</title>
-    <!-- Link con archivo CSS -->
     <link rel="stylesheet" href="style/stylesheet.css">
-    <!-- Importa fuente de Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Fuente de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <!--Logo va a ir acá, con el menú a pantalla completa-->
-        <img src="images/logo.png" alt="logo de Ivan Siemienczuk Arquitectura">
+        <img src="images/logo.png" alt="">
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="proyectos.html">Proyectos</a>
+                    <ul>  <!-- Submenú de Proyectos -->
+                        <li><a href="proyectos/edificiospublicos.html">Edificios públicos</a></li>
+                        <li><a href="proyectos/localescomerciales.html">Locales comerciales</a></li>
+                        <li><a href="proyectos/oficinas.html">Oficinas</a></li>
+                        <li><a href="proyectos/viviendascolectivas.html">Viviendas colectivas</a></li>
+                        <li><a href="proyectos/viviendasunifamiliares.html">Viviendas unifamiliares</a></li>
+                    </ul>
+                </li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="estudio.html">Estudio</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -27,87 +35,104 @@
         </nav>
     </header>
     <main>
-        <h2>Nuestros servicios</h2>
-        <p align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis tristique neque.
-            Pellentesque id scelerisque ante. Aliquam commodo felis nisi, vel sagittis nisi consequat non. Ut feugiat
-            felis risus. Aliquam sagittis magna sit amet elit imperdiet suscipit. Mauris nisi dui, convallis non lorem
-            vitae, pellentesque pellentesque mauris.</p>
-        <div class="grillaServicios">
+        <section class="margen contenidoPrincipal">
+            <h2>Nuestros servicios</h2>
+            <p><span class="negrita">Llave en mano.</span> Elegir este sistema de construcción posibilita contar con presupuesto y plazo de obra fijos con avances de
+                obra acorde a la necesidad de cada cliente, desligandolo de las complejas tareas que involucran una
+                construcción para su correcta ejecución, dejando la satisfaccion de visitar su obra, solamente para ver como
+                se mateializan sus sueños.</p>
+        </section>
+        <div class="margen grillaServicios"> <!-- Se repite el mismo SVG hasta encontrar los íconos ideales -->
             <section id="carpinteria">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                    <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
+                  </svg>
                 <h3>Carpintería</h3>
                 <p>Fabricamos todos los muebles sugeridos o diseñados.</p>
             </section>
             <section id="albanileria">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                    <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
+                  </svg>
                 <h3>Albañilería</h3>
                 <p>Contamos con personal capacitado para todo tipo de obra.</p>
             </section>
             <section id="electricidad">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                    <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
+                  </svg>
                 <h3>Electricidad</h3>
                 <p>Personal idóneo, para todo tipo de instalaciones eléctricas, y colocacion de luminarias tanto
                     exterior como interior.</p>
             </section>
             <section id="durlock">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                    <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
+                  </svg>
                 <h3>Durlock</h3>
                 <p>Armado y colocación de tabiquerías y cielorrasos.</p>
             </section>
             <section id="herreria">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                    <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
+                  </svg>
                 <h3>Herrería</h3>
                 <p>De obra y de taller, de acuerdo a planos, rejas escaleras, diseños en chapas de distintos
                     materiales, cortes con pantografos, plegados y diversos tipos de terminaciones como cromados,
                     pinturas, o patinas.</p>
             </section>
             <section id="pintura">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                    <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
+                  </svg>
                 <h3>Pintura</h3>
                 <p>Interior y exterior, latex, patinas, espatulados, revoques plasticos, estucos, aplicaciones en
                     diversas tecnicas como pincel, soplete, espatulas, llanados.</p>
             </section>
             <section id="plomeria">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hammer" viewBox="0 0 16 16">
+                    <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"/>
+                  </svg>
                 <h3>Plomería</h3>
                 <p>Instalaciones generales de gas y agua, sistemas de riegos automaticos, instalaciones industriales,
                     domiciliarias, hidromasajes, duchas escosesas, instalaciones gastronomicas.<</p>
             </section>
-            <section id="diseno">
-                <ul>
-                    <!--DISEÑO-->
-                    <li>Anteproyecto - Proyecto</li>
-                    <li>Estructuras</li>
-                    <li>Diseños Interiores</li>
-                    <li>Paisajismo</li>
-                    <li>Luminotecnia</li>
-                    <li>Ambientaciones</li>
-                    <li>Equipamiento interior - exterior</li>
-                </ul>
-            </section>
-            <section id="administracion">
-                <ol>
-                    <!--ADMINISTRACION-->
-                    <li>Presupuestación del proyecto</li>
-                    <li>Costeo</li>
-                    <li>Seguimiento de avance de obra</li>
-                    <li>Gestiones comerciales-municipales</li>
-                    <li>Finales de obra</li>
-                    <li>Ambientaciones</li>
-                    <li>Equipamiento</li>
-                    </<ol>
+            <section id="disenoAdministracion">
+                <div>
+                    <h3>Diseño</h3>
+                    <ul> <!--DISEÑO-->
+                        <li>Anteproyecto - Proyecto</li>
+                        <li>Estructuras</li>
+                        <li>Diseños Interiores</li>
+                        <li>Paisajismo</li>
+                        <li>Luminotecnia</li>
+                        <li>Ambientaciones</li>
+                        <li>Equipamiento interior - exterior</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Administración</h3>
+                    <ul> <!--ADMINISTRACION-->
+                        <li>Presupuestación del proyecto</li>
+                        <li>Costeo</li>
+                        <li>Seguimiento de avance de obra</li>
+                        <li>Gestiones comerciales-municipales</li>
+                        <li>Finales de obra</li>
+                        <li>Ambientaciones</li>
+                        <li>Equipamiento</li>
+                        </<ul>
+                </div>
             </section>
         </div>
     </main>
-    <aside>
-        <h3>LLAVE EN MANO: “UNA OBRA PLANIFICADA AHORRA TIEMPO Y COSTOS IMPREVISTOS”</h3>
-        <p>Elegir este sistema de construcción posibilita contar con presupuesto y plazo de obra fijos con avances de
-            obra acorde a la necesidad de cada cliente, desligandolo de las complejas tareas que involucran una
-            construcción para su correcta ejecución, dejando la satisfaccion de visitar su obra, solamente para ver como
-            se mateializan sus sueños.</p>
-    </aside>
     <footer>
-        <h6><a href="index.html">INICIO</a> | <a href="proyectos.html">PROYECTOS</a> | <a
-                href="servicios.html">SERVICIOS</a> | <a href="estudio.html">ESTUDIO</a> | <a
-                href="contacto.html">CONTACTO</a></h6>
-        <h6>IVAN SIEMIENCZUK ARQUITECTURA</h6>
-        <h6>
-            <!--Desarrollado por Ander-->
-        </h6>
-        <!--Iconos con enlaces a redes sociales-->
+        <div>
+            <img src="images/logo_trescolores.jpg" alt="">
+            <h6><a href="index.html">INICIO</a> | <a href="proyectos.html">PROYECTOS</a> | <a
+                    href="servicios.html">SERVICIOS</a> | <a href="estudio.html">ESTUDIO</a> | <a
+                    href="contacto.html">CONTACTO</a></h6>
+            <h6>IVAN SIEMIENCZUK ARQUITECTURA</h6>
+        </div>
     </footer>
 </body>
 

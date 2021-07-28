@@ -6,47 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iván Siemienczuk Arquitectura</title>
-    <!-- Link con archivo CSS -->
+    <!-- Link a Bootstrap -->
+    <link rel="stylesheet" href="bs5/css/bootstrap.css">
     <link rel="stylesheet" href="style/stylesheet.css">
-    <!-- Importa fuente de Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Fuente de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-            <!--Logo va a ir acá, con el menú a pantalla completa-->
-        <img src="images/logo.png" alt="logo de Ivan Siemienczuk Arquitectura">
+        <img src="images/logo.png" alt="">
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="proyectos.html">Proyectos</a>
+                    <ul> <!-- Submenú de Proyectos -->
+                        <li><a href="proyectos/edificiospublicos.html">Edificios públicos</a></li>
+                        <li><a href="proyectos/localescomerciales.html">Locales comerciales</a></li>
+                        <li><a href="proyectos/oficinas.html">Oficinas</a></li>
+                        <li><a href="proyectos/viviendascolectivas.html">Viviendas colectivas</a></li>
+                        <li><a href="proyectos/viviendasunifamiliares.html">Viviendas unifamiliares</a></li>
+                    </ul>
+                </li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="estudio.html">Estudio</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <div class="fondoPrincipal">
-        <h1>Iván Siemienczuk Arquitectura</h1>
-        <h3 class="italica">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-        <!--Fondo con GIF animado en loop-->
+    <div class="fondoHome"> <!-- Fondo decorativo Home -->
+        <div class="tituloHome">
+            <h1>Iván Siemienczuk Arquitectura</h1>
+            <h3 class="italica">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+        </div>
     </div>
     <main>
-        <section class="contenidoPrincipal">
-            <div class="displayInlineBlock">
-                <h3>
-                    <!--Titulo acerca del estudio-->
-                    Lorem ipsum dolor sit.
-                </h3>
-                <p>
-                    <!-- Descripción del estudio -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
+        <section class="margen contenidoPrincipalHome">
+            <div>
+                <h2>Somos profesionales</h2>
+                <p>Nos diferenciamos del resto de los estudios de arquitectura por nuestro especial énfasis en la calidad del diseño, la atención personalizada y asesoramiento en cada momento de la construcción desde la compra del terreno hasta la entrega de la llave de su obra.</p>
             </div>
-            <img src="images/localescomerciales1.jpg" alt="fotografia de interior de joyeria la maison">
+            <!-- Carrusel Bootstrap -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/localescomerciales1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/edficiopublico1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/localescomerciales1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
-        <section>
-            <!--Mapa de Google Maps con dirección del estudio, ANCHO AUTO CON DISPOSITIVO, ALTO 440px-->
+        <section> <!--Mapa de Google Maps con ubicación del estudio-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.2137559308152!2d-60.73787557078192!3d-
             32.92842839880792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b652c26b1fb841%3A0xbbb8d7f855a9e793!2
             sArquitecto%20Iv%C3%A1n%20Siemienczuk!5e0!3m2!1ses-419!2sar!4v1623266625397!5m2!1ses-419!2sar" width="100%"
@@ -54,15 +79,17 @@
         </section>
     </main>
     <footer>
-        <h6><a href="index.html">INICIO</a> | <a href="proyectos.html">PROYECTOS</a> | <a
-                href="servicios.html">SERVICIOS</a> | <a href="estudio.html">ESTUDIO</a> | <a
-                href="contacto.html">CONTACTO</a></h6>
-        <h6>IVAN SIEMIENCZUK ARQUITECTURA</h6>
-        <h6>
-            <!--Desarrollado por Ander-->
-        </h6>
-        <!--Iconos con enlaces a redes sociales-->
+        <div>
+            <img src="images/logo_trescolores.jpg" alt="">
+            <h6><a href="index.html">INICIO</a> | <a href="proyectos.html">PROYECTOS</a> | <a
+                    href="servicios.html">SERVICIOS</a> | <a href="estudio.html">ESTUDIO</a> | <a
+                    href="contacto.html">CONTACTO</a></h6>
+            <h6>IVAN SIEMIENCZUK ARQUITECTURA</h6>
+        </div>
     </footer>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-
 </html>
