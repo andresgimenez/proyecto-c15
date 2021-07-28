@@ -1,3 +1,10 @@
+/* Inicio Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Fin Reset */
+
 /* Tipografía */
 body {
     font-family: 'Poppins', sans-serif;
@@ -22,13 +29,9 @@ h2 {
 p {
     line-height: 1.9;
 }
+/* Fin tipografía */
 
 /* Etiquetas */
-* {
-    margin: 0;
-    padding: 0;
-}
-
 header img {
     height: 70px;
 }
@@ -40,9 +43,9 @@ header {
     background-color: skyblue;
 }
 
-/* Menú y submenú */
 nav {
     display: inline-block;
+    padding-left: 40px;
 }
 
 nav li {
@@ -51,46 +54,51 @@ nav li {
     padding-right: 15px;
 }
 
-ul {
-    list-style: none;
-    font-size: 0;
-}
-
-li {
-    display: inline-block;
-    width: 25%;
-    position: relative;
-    font-size: 14px;
-}
-
-ul ul {
-    position: absolute;
-    left: 0px;
-    display: none;
-    background-color: skyblue;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-ul ul li {
-    display: block;
-}
-
-ul li:hover ul {
-    display: block;
-}
-/* Fin menú y submenú */
-
 footer {
     color: navy;
     background-color: skyblue;
     border-radius: 5px;
     text-align: center;
 }
+/* Fin etiquetas */
 
 /* Clases */
 .margen {
     margin: 25px;
+}
+
+.container-flex-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+}
+
+.container-flex-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-flex-fondo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+
+.container-proyecto {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+.imagen-proyecto {
+size: 65%;
 }
 
 .fondoPrincipal {
@@ -105,6 +113,7 @@ footer {
     margin: 25px;
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .displayInlineBlock {
@@ -119,3 +128,4 @@ ul.listaDesorden {
     list-style-type: square;
     list-style-position: outside;
 }
+/* Fin Clases */
