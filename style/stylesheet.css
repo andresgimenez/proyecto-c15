@@ -24,14 +24,28 @@ p {
 }
 
 /* Etiquetas */
-nav {
-    color: navy;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    height: 70px;
+}
+
+header {
+    height: 70px;
+    padding: 5px;
+    border-bottom: solid black 1px;
     background-color: skyblue;
-    border-radius: 5px;
+}
+
+nav {
+    display: inline-block;
 }
 
 nav li {
-    display:inline;
+    display: inline;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -44,9 +58,26 @@ footer {
 }
 
 /* Clases */
+.margen {
+    margin: 25px;
+}
+
 .fondoPrincipal {
     background-image: url(../images/home.jpg);
-    background-size: auto;
+    height: 70vh;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.contenidoPrincipal {
+    background-color: skyblue;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.displayInlineBlock {
+    display: inline-block;
 }
 
 ol.listaOrdenada {
