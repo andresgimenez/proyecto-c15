@@ -1,48 +1,59 @@
-/* Etiquetas */
-nav {
-    color: white;
-    background-color: seagreen;
+/* Tipografía */
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
-h1,
+.italica {
+    font-style: italic;
+}
+
+.negrita {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 50px;
+}
+
 h2 {
-    color: navy;
-    background-color: skyblue;
-}
-
-h3 {
-    color: rgba(12, 12, 110, 0.575);
-    background-color: paleturquoise;
-}
-
-footer {
-    color: white;
-    background-color: seagreen;
-}
-
-nav a {
-    color: skyblue;
-}
-
-footer a {
-    color: skyblue;
+    font-size: 30px;
 }
 
 p {
-    background-color: skyblue;
+    line-height: 1.9;
 }
 
-table {
+/* Etiquetas */
+nav {
     color: navy;
     background-color: skyblue;
+    border-radius: 5px;
 }
 
-fieldset p {
-    background-color: white;
+nav li {
+    display:inline;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer {
+    color: navy;
+    background-color: skyblue;
+    border-radius: 5px;
+    text-align: center;
 }
 
 /* Clases */
-.listaTablaInferior {
-    color: springgreen;
-    background-color: slategray;
+.fondoPrincipal {
+    background-image: url(../images/home.jpg);
+    background-size: auto;
+}
+
+ol.listaOrdenada {
+    list-style-type: upper-roman;
+}
+
+ul.listaDesorden {
+    list-style-type: square;
+    list-style-position: outside;
 }
