@@ -1,0 +1,48 @@
+/* Etiquetas */
+nav {
+    color: white;
+    background-color: seagreen;
+}
+
+h1,
+h2 {
+    color: navy;
+    background-color: skyblue;
+}
+
+h3 {
+    color: rgba(12, 12, 110, 0.575);
+    background-color: paleturquoise;
+}
+
+footer {
+    color: white;
+    background-color: seagreen;
+}
+
+nav a {
+    color: skyblue;
+}
+
+footer a {
+    color: skyblue;
+}
+
+p {
+    background-color: skyblue;
+}
+
+table {
+    color: navy;
+    background-color: skyblue;
+}
+
+fieldset p {
+    background-color: white;
+}
+
+/* Clases */
+.listaTablaInferior {
+    color: springgreen;
+    background-color: slategray;
+}
