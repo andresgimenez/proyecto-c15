@@ -1,10 +1,3 @@
-/* Inicio Reset */
-* {
-    margin: 0;
-    padding: 0;
-}
-/* Fin Reset */
-
 /* Tipografía */
 body {
     font-family: 'Poppins', sans-serif;
@@ -29,9 +22,13 @@ h2 {
 p {
     line-height: 1.9;
 }
-/* Fin tipografía */
 
 /* Etiquetas */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header img {
     height: 70px;
 }
@@ -45,7 +42,6 @@ header {
 
 nav {
     display: inline-block;
-    padding-left: 40px;
 }
 
 nav li {
@@ -60,45 +56,10 @@ footer {
     border-radius: 5px;
     text-align: center;
 }
-/* Fin etiquetas */
 
 /* Clases */
 .margen {
     margin: 25px;
-}
-
-.container-flex-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: left;
-}
-
-.container-flex-home {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.container-flex-fondo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: left;
-}
-
-.container-proyecto {
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
-  
-.imagen-proyecto {
-size: 65%;
 }
 
 .fondoPrincipal {
@@ -113,19 +74,227 @@ size: 65%;
     margin: 25px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .displayInlineBlock {
     display: inline-block;
 }
 
-ol.listaOrdenada {
-    list-style-type: upper-roman;
+/* Grid sección Servicios */
+
+.grillaServicios {
+    display: grid;
+    grid-template-areas: 
+    "carpinteria albanileria electricidad"
+    "durlock herreria pintura"
+    ". plomeria none"
+    "diseno administracion none"
+    ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: space-evenly;
+    margin: 10px;
 }
 
-ul.listaDesorden {
-    list-style-type: square;
-    list-style-position: outside;
+#carpinteria {
+    grid-area: carpinteria;
+    background-color: bisque;
+    padding: 10px;
 }
-/* Fin Clases */
+
+#albanileria {
+    grid-area: albanileria;
+    background-color: bisque;
+    padding: 10px;
+}
+
+#electricidad {
+    grid-area: electricidad;
+    background-color: bisque;
+    padding: 10px;
+}
+
+#durlock {
+    grid-area: durlock;
+    background-color: bisque;
+    padding: 10px;
+}
+
+#herreria {
+    grid-area: herreria;
+    background-color: bisque;
+    padding: 10px;
+}
+
+#pintura {
+    grid-area: pintura;
+    background-color: bisque;
+    padding: 10px;
+}
+
+#plomeria {
+    grid-area: plomeria;
+    background-color: bisque;
+    padding: 10px;
+}
+
+#diseno {
+    grid-area: diseno;
+    background-color: bisque;
+    padding: 10px;
+}
+
+#administracion {
+    grid-area: administracion;
+    background-color: bisque;
+    padding: 10px;
+}
+
+#diseno ul {
+    list-style-type: none;
+}
+
+#administracion ol {
+    list-style-type: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+    
+    header img {
+        height: 50px;
+    }
+    
+    header {
+        display: flexbox;
+        height: 15vh;
+        padding: 5px;
+        border-bottom: solid black 1px;
+        background-color: skyblue;
+    }
+    
+    nav li {
+        font-size: large;
+        display: inline;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    section iframe {
+        display: none;
+    }
+    
+    /* Clases */
+
+    .fondoPrincipal {
+        background-image: url(../images/home.jpg);
+        height: 80vh;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
+    .contenidoPrincipal {
+        background-color: skyblue;
+        margin: 25px;
+        padding: 10px;
+        border-radius: 5px;
+        display: flexbox;
+    }
+
+    .contenidoPrincipal img {
+        padding-top: 10px;
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    
+    header img {
+        height: 70px;
+    }
+    
+    header {
+        display: flexbox;
+        height: 10vh;
+        padding: 5px;
+        border-bottom: solid black 1px;
+        background-color: skyblue;
+    }
+    
+    nav li {
+        font-size: larger;
+        display: inline;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Clases */
+
+    .fondoPrincipal {
+        background-image: url(../images/home.jpg);
+        height: 90vh;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
+    .contenidoPrincipal {
+        background-color: skyblue;
+        margin: 25px;
+        padding: 10px;
+        border-radius: 5px;
+        display: flexbox;
+    }
+
+    .contenidoPrincipal img {
+        padding-top: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    header img {
+        height: 70px;
+    }
+    
+    header {
+        display: flexbox;
+        height: 10vh;
+        padding: 5px;
+        border-bottom: solid black 1px;
+        background-color: skyblue;
+    }
+    
+    nav li {
+        font-size: larger;
+        display: inline;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Clases */
+
+    .fondoPrincipal {
+        background-image: url(../images/home.jpg);
+        height: 90vh;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
+    .contenidoPrincipal {
+        background-color: skyblue;
+        margin: 25px;
+        padding: 10px;
+        border-radius: 5px;
+        display: flexbox;
+        align-items: center;
+    }
+
+    .contenidoPrincipal img {
+        padding-top: 10px;
+        width: 50%;
+    }
+}
